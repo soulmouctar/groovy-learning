@@ -1,12 +1,5 @@
 package org.example
-class Personne {
-    String nom
-    int age
 
-    String toString() {
-        return "Nom: $nom, Age: $age"
-    }
-}
 
 static void main(String[] args) {
     String nom = "Grails"
@@ -34,18 +27,5 @@ static void main(String[] args) {
         println("La capitale de $pay est $capitale.")
     }
 
-    //creer une instance de Personne
-    def personne = new Personne(nom: "Jean", age: 30)
-    println(personne.toString())
 
-    //creer une liste de personnes
-    def personnes = [
-            new Personne(nom: "Alice", age: 25),
-            new Personne(nom: "Bob", age: 35),
-            new Personne(nom: "Charlie", age: 28)
-    ]
-    //parcourir la liste de personnes
-    personnes.each { p ->
-        println(p.toString())
-    }
 }
